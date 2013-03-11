@@ -1,0 +1,29 @@
+
+
+body {
+	background-color: #f0eded;
+
+}
+
+.raleway    {color: black;}
+.sspSB 		{color: black;}
+.sspIt      {color: black;}
+.sspLIt    {color: black;}
+
+.span1 {
+	width: 30px;
+}
+
+.titleDiv {
+	position:absolute;
+	top: 30%;
+}
+
+.title {
+	font-family: SourceSansProBl;
+	font-size: 16px;
+}
+
+.subtitle {
+	font-family: SourceSansPro;
+}

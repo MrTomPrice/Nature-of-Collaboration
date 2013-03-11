@@ -1,0 +1,37 @@
+
+body {
+	background-color: #f0eded;
+}
+
+.raleway    {color: black;}
+.sspSB 		{color: black;}
+.sspIt      {color: black;}
+.sspLIt    {color: black;}
+
+.description {
+	font-family:'SourceSansProBIt';
+	font-size: 14px;
+	margin: 20px 0 20px 0;
+}
+
+.numberLabel {
+	font-family:'SourceSansProBl';
+	font-size: 25px;
+	text-shadow: white 0.1em 0.1em 0.1em
+}
+
+.rowHeight {
+	height: 300px;
+}
+
+.diagram {
+	height: 120px; 
+	margin:0 auto;
+}
+.diagram2 {
+	height: 60px; 
+	margin:0 auto;
+}
+
+.offset1 {
+margin-left: 30px;

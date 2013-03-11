@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/bootstrap-progressbar.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-progressbar.css">
+
+    <style type="text/css">
+        .vertical-progressbar-span {
+            height: 200px;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function() {
+            $('#mono').on('click', function(event) {
+                $('.progress .bar.DC').attr('data-percentage', "100").progressbar();
+                $('.progress .bar.TP').attr('data-percentage',   "0").progressbar();
+                $('.progress .bar.CU').attr('data-percentage',  "25").progressbar();
+                $('.progress .bar.CS').attr('data-percentage',   "0" ).progressbar();
+                $('.progress .bar.AT').attr('data-percentage',  "25").progressbar();
+                $('.progress .bar.UP').attr('data-percentage',   "0" ).progressbar();
+                $('.progress .bar.UM').attr('data-percentage',   "0" ).progressbar();
+                $('.progress .bar.IS').attr('data-percentage',   "0" ).progressbar();
+                $('.progress .bar.UA').attr('data-percentage',  "25").progressbar();
+                $('.progress .bar.DG').attr('data-percentage',   "0" ).progressbar();
+                $('.progress .bar.DNIB').attr('data-percentage',"25").progressbar();
+                $('.progress .bar.IV').attr('data-percentage',  "25").progressbar();
+                $('.progress .bar.IS').attr('data-percentage',   "0" ).progressbar();
+                $('.progress .bar.PCE').attr('data-percentage',  "0" ).progressbar();
+                $('.progress .bar.WTR').attr('data-percentage', "25").progressbar();
+                $('.progress .bar.Cm').attr('data-percentage',  "25").progressbar();
+            });
+            $('#multi').on('click', function(event) {
+                $('.progress .bar.DC').attr('data-percentage', "100").progressbar();
+                $('.progress .bar.TP').attr('data-percentage',  "25").progressbar();
+                $('.progress .bar.CU').attr('data-percentage',  "25").progressbar();
+                $('.progress .bar.CS').attr('data-percentage',  "25").progressbar();
+                $('.progress .bar.AT').attr('data-percentage',  "50").progressbar();
+                $('.progress .bar.UP').attr('data-percentage',  "25").progressbar();
+                $('.progress .bar.UM').attr('data-percentage',  "25").progressbar();
+                $('.progress .bar.IS').attr('data-percentage',   "0").progressbar();
+                $('.progress .bar.UA').attr('data-percentage',  "25").progressbar();
+                $('.progress .bar.DG').attr('data-percentage',  "25").progressbar();
+                $('.progress .bar.DNIB').attr('data-percentage',"25").progressbar();
+                $('.progress .bar.IV').attr('data-percentage',  "25").progressbar();
+                $('.progress .bar.IS').attr('data-percentage',  "50").progressbar();
+                $('.progress .bar.PCE').attr('data-percentage', "25").progressbar();
+                $('.progress .bar.WTR').attr('data-percentage', "25").progressbar();
+                $('.progress .bar.Cm').attr('data-percentage',  "25").progressbar();
+            });
+            $('#inter').on('click', function(event) {
+                $('.progress .bar.DC').attr('data-percentage', "100").progressbar();
+                $('.progress .bar.TP').attr('data-percentage',  "50").progressbar();
+                $('.progress .bar.CU').attr('data-percentage',  "50").progressbar();
+                $('.progress .bar.CS').attr('data-percentage',  "50").progressbar();
+                $('.progress .bar.AT').attr('data-percentage', "100").progressbar();
+                $('.progress .bar.UP').attr('data-percentage',  "50").progressbar();
+                $('.progress .bar.UM').attr('data-percentage',  "50").progressbar();
+                $('.progress .bar.IS').attr('data-percentage',  "50").progressbar();
+                $('.progress .bar.UA').attr('data-percentage',  "25").progressbar();
+                $('.progress .bar.DG').attr('data-percentage',  "50").progressbar();
+                $('.progress .bar.DNIB').attr('data-percentage',"50").progressbar();
+                $('.progress .bar.IV').attr('data-percentage',  "25").progressbar();
+                $('.progress .bar.IS').attr('data-percentage',  "50").progressbar();
+                $('.progress .bar.PCE').attr('data-percentage', "50").progressbar();
+                $('.progress .bar.WTR').attr('data-percentage',"100").progressbar();
+                $('.progress .bar.Cm').attr('data-percentage', "100").progressbar();
+            });
+            $('#trans').on('click', function(event) {
+                $('.progress .bar.DC').attr('data-percentage',  "50").progressbar();
+                $('.progress .bar.TP').attr('data-percentage', "100").progressbar();
+                $('.progress .bar.CU').attr('data-percentage', "100").progressbar();
+                $('.progress .bar.CS').attr('data-percentage', "100").progressbar();
+                $('.progress .bar.AT').attr('data-percentage', "100").progressbar();
+                $('.progress .bar.UP').attr('data-percentage', "100").progressbar();
+                $('.progress .bar.UM').attr('data-percentage', "100").progressbar();
+                $('.progress .bar.IS').attr('data-percentage', "100").progressbar();
+                $('.progress .bar.UA').attr('data-percentage', "100").progressbar();
+                $('.progress .bar.DG').attr('data-percentage', "100").progressbar();
+                $('.progress .bar.DNIB').attr('data-percentage',"100").progressbar();
+                $('.progress .bar.IV').attr('data-percentage', "100").progressbar();
+                $('.progress .bar.IS').attr('data-percentage', "100").progressbar();
+                $('.progress .bar.PCE').attr('data-percentage',"100").progressbar();
+                $('.progress .bar.WTR').attr('data-percentage',"100").progressbar();
+                $('.progress .bar.Cm').attr('data-percentage', "100").progressbar();
+            });
+        });
+    </script>
+<style type="text/css"></style></head>
+<body>
+<div class="btn-toolbar">
+    <div class="btn-group">
+        <button class="btn" id="mono">Mono</button>
+        <button class="btn" id="multi">Multi</button>
+        <button class="btn" id="inter">Inter</button>
+        <button class="btn" id="trans">Trans</button>
+    </div>
+</div>
+<div class="span9 vertical-progressbar-span">
+    <div class="progress vertical bottom">
+        <div class="bar DC" style="height: 100%;"></div>
+    </div>
+    <div class="progress vertical bottom">
+        <div class="bar TP" style="height: 0%;"></div>
+    </div>
+    <div class="progress vertical bottom">
+        <div class="bar CU" style="height: 25%;"></div>
+    </div>
+    <div class="progress vertical bottom">
+        <div class="bar CS" style="height: 0%;"></div>
+    </div>
+    <div class="progress vertical bottom">
+        <div class="bar AT" style="height: 25%;"></div>
+    </div>
+        <div class="progress vertical bottom">
+        <div class="bar UP" style="height: 0%;"></div>
+    </div>
+    <div class="progress vertical bottom">
+        <div class="bar UM" style="height: 0%;"></div>
+    </div>
+    <div class="progress vertical bottom">
+        <div class="bar IS" style="height: 0%;"></div>
+    </div>
+    <div class="progress vertical bottom">
+        <div class="bar UA" style="height: 25%;"></div>
+    </div>
+    <div class="progress vertical bottom">
+        <div class="bar DG" style="height: 0%;"></div>
+    </div>
+        <div class="progress vertical bottom">
+        <div class="bar DNIB" style="height: 25%;"></div>
+    </div>
+    <div class="progress vertical bottom">
+        <div class="bar IV" style="height: 25%;"></div>
+    </div>
+    <div class="progress vertical bottom">
+        <div class="bar IS" style="height: 0%;"></div>
+    </div>
+    <div class="progress vertical bottom">
+        <div class="bar PCE" style="height: 0%;"></div>
+    </div>
+    <div class="progress vertical bottom">
+        <div class="bar WTR" style="height: 25%;"></div>
+    </div>
+    <div class="progress vertical bottom">
+        <div class="bar Cm" style="height: 25%;"></div>
+    </div>
+</div>
+
+</body></html>

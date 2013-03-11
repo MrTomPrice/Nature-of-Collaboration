@@ -1,0 +1,52 @@
+
+body {
+	background-color: #f0eded;
+}
+
+.raleway    {color: black;}
+.sspSB 		{color: black;}
+.sspIt      {color: black;}
+.sspLIt    {color: black;}
+
+.h1 {
+	font-size: 20px;
+	font-family:'SourceSansProB';
+}
+
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+  color: #5bc0de;
+}
+
+.clicked {
+	color: #5bc0de;
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+	box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+}
+
+.btn.clicked:hover {
+	background-position: 0 0;
+	-webkit-transition: background-position 0.0s linear;
+	-moz-transition: background-position 0.0s linear;
+	-o-transition: background-position 0.0s linear;
+	transition: background-position 0.0s linear;
+}
+
+.progress.vertical {
+  background-color: #d9d7d7;
+  background-image: -moz-linear-gradient(right, #e5e3e3, #d9d7d7);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e5e3e3), to(#d9d7d7));
+  background-image: -webkit-linear-gradient(right, #e5e3e3, #d9d7d7);
+  background-image: -o-linear-gradient(right, #e5e3e3, #d9d7d7);
+  background-image: linear-gradient(to left, #e5e3e3, #d9d7d7);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe5e3e3', endColorstr='#ffd9d7d7', GradientType=3);
+}
